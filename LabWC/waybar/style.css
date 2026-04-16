@@ -1,6 +1,6 @@
 * {
-    font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
-    font-size: 13px;
+    font-family: 'Comfortaa', 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -95,6 +95,7 @@ button:hover {
 #mpd {
     padding: 0 10px;
     color: #ffffff;
+    border-radius: 5px;
 }
 
 #window,

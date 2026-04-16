@@ -50,8 +50,11 @@
         <command>wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle</command>
       </action>
      </keybind>
+     <keybind key="W-m">
+       <action name="ToggleMaximize" />
+     </keybind>
 
-</keyboard>
+  </keyboard>
 
   <mouse>
     <default />

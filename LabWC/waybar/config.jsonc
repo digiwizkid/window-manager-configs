@@ -12,18 +12,17 @@
         "sway/scratchpad"
     ],
     "modules-center": [
-        "sway/window"
+        "sway/window",
+	"clock"
     ],
     "modules-right": [
         "pulseaudio",
-        "network",
+	"backlight",
         "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
-        "backlight",
         "battery",
-        "clock",
         "tray"
     ],
     // Modules configuration
@@ -164,8 +163,7 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-    	"format-alt": "{ifname}: {ipaddr}/{cidr}",
-         "on-click": "nm-connection-editor"
+    	"format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

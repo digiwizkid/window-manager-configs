@@ -27,6 +27,9 @@ mako >/dev/null 2>&1 &
 
 # battery level check
 ~/.local/bin/battery_check.sh &
+# network indicator 
+nm-applet --indicator &
+
 
 # Lock screen after 5 minutes; turn off display after another 5 minutes.
 #
@@ -36,10 +39,14 @@ mako >/dev/null 2>&1 &
 # (since a837fef). Instead use a wlr-output-power-management client such as
 # https://git.sr.ht/~leon_plickat/wlopm
 swayidle -w \
-	timeout 300 'swaylock -f -c 000000' \
+	timeout 300 "swaylock -fc 000000" \
 	timeout 600 'wlopm --off \*' \
 	resume 'wlopm --on \*' \
-	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
+	before-sleep "swaylock -fc 000000" >/dev/null 2>&1 &
 
 # Start the clipman collector
 wl-paste -t text --watch clipman store --no-persist &
+
+# Start Fcitx5 daemon
+fcitx5 -d &
+
