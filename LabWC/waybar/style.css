@@ -114,7 +114,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: #f0932b;
 }
 
 #battery {
@@ -236,6 +236,7 @@ label:focus {
 
 #tray {
     background-color: #2980b9;
+    margin-right: 4px;
 }
 
 #tray > .passive {
@@ -324,4 +325,17 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+
+#custom-launcher {
+    background-color: #383c4a; /* Change this to match your other items */
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 0 4px; /* The first number is top/bottom, second is left/right */
+}
+
+/* Optional: Add a hover effect to match the others */
+#custom-launcher:hover {
+    background-color: #4b5162;
 }
